@@ -114,7 +114,6 @@
   .br-input-box {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 5px 0px 5px 0px;
   }
   .br-week-box,
@@ -237,6 +236,14 @@
     align-items: center;
   }
 
+  .tr-select {
+    width: 40px;
+  }
+
+  .tr-input {
+    width: 40px;
+  }
+
   .bottom-grid {
     width: 100%;
     height: 100%;
@@ -245,7 +252,7 @@
     padding: 5px;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: .5fr repeat(7, 1fr);
     grid-template-areas: 
     "t t t t"
     "s s s s"
@@ -276,7 +283,24 @@
     line-height: 1.2;
   }
 
-  .ui-label { color: rgb(145, 145, 145); font-size: 13px;}
+  .br-attributes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    div {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .ui-inline-label, .ui-label { color: rgb(145, 145, 145); font-size: 13px;}
 }
 
 @media (max-width: 900px) {
