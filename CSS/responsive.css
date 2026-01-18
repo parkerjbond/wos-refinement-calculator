@@ -231,6 +231,52 @@
     grid-template-rows: .5fr 0 1.8fr;
   }
 
+  .tr-cell-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-grid {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    padding: 5px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    "t t t t"
+    "s s s s"
+    "fc fc fc fc"
+    "rc rc rc rc"
+    "w w w w"
+    "m m m m"
+    "c c c c"
+    "i i i i";
+    color: white;
+  }
+
+  .t { grid-area: t; border: none;}
+  .fc { grid-area: fc; }
+  .rc { grid-area: rc; }
+  .w { grid-area: w; }
+  .m { grid-area: m; }
+  .c { grid-area: c; }
+  .i { grid-area: i; }
+  .s { grid-area: s; }
+
+  .tl-cell-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .ui-label { color: rgb(145, 145, 145); font-size: 13px;}
 }
 
 @media (max-width: 900px) {
