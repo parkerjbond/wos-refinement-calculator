@@ -300,7 +300,7 @@
     }
   }
 
-  .ui-inline-label, .ui-label { color: rgb(145, 145, 145); font-size: 13px;}
+  .ui-inline-label, .ui-label { color: rgb(145, 145, 145); font-size: 13px; display: flex; text-align: center;}
 }
 
 @media (max-width: 900px) {
