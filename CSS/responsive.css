@@ -1,0 +1,217 @@
+@media (max-width: 1330px) {
+
+  /* === Main App === */
+
+  .main-app{
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .layout{
+    grid-template-columns: 1.25fr 1fr;  /* still 2 columns */
+    grid-template-rows: auto;           /* let rows size naturally */
+    grid-template-areas:
+      "tl r"
+      "tl br"
+      "tl bottom";
+  }
+
+  /* give the right side a consistent padding like tl has */
+  .tr, .br, .bottom { padding: 12px; }
+
+  /* allow scrolling instead of squeezing */
+  .layout { height: auto; }
+
+
+  /* === Top Left === */
+
+
+  .tl-grid {
+    width: 100%;
+    height: auto;
+    align-content: start;
+
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: 
+    "gt gt"
+    "f e"
+    "cc ic"
+    "mc lc"
+    "i wa";
+  }
+
+  .gt { grid-area: gt;}
+  .f { grid-area: f;}
+  .cc { grid-area: cc;}
+  .e { grid-area: e;}
+  .ic { grid-area: ic;}
+  .mc { grid-area: mc;}
+  .lc { grid-area: lc;}
+  .i { grid-area: i;}
+  .wa { grid-area: wa;}
+
+  .tl-left {
+    height: 400px;
+  }
+
+  .tl-cell {
+    background: #fff;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 0;
+
+    display: grid;
+    grid-template-rows: .5fr 1fr 1.5fr;
+  }
+
+  .resize {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    border: 1px solid white;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    background-color: #272841;
+    color: #fff;
+
+    align-items: stretch;
+    justify-content: stretch;
+
+    min-height: 0;
+  }
+
+
+  /* === Top Right === */
+  
+
+  .tr-grid{
+    grid-template-columns: 1fr;   /* 1 column instead of 3 */
+    grid-template-rows: auto;     /* let rows expand */
+  }
+
+  .city-buff {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  }
+
+
+  /* === Middle Right === */
+
+
+  .br-input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 0px 5px 0px;
+  }
+  .br-week-box,
+  .br-refinement-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  .br-input {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background-color: #212038;
+    color: #fff;
+
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .br-refinement-plan-box {
+    grid-template-columns: 1fr 1fr;   /* 1 column instead of 3 */
+    grid-template-rows: repeat(10, 1fr); 
+
+    grid-template-areas: 
+    "pw rt"
+    "d1 d1o"
+    "d2 d2o"
+    "d3 d3o"
+    "d4 d4o"
+    "d5 d5o"
+    "d6 d6o"
+    "d7 d7o"
+    "rpw rpwo"
+    "tc tco"
+    ;
+  }
+
+  /* headers */
+  .pw  { grid-area: pw; }
+  .rt  { grid-area: rt; }
+  .tc  { grid-area: tc; }
+  .rpw { grid-area: rpw; }
+
+  /* outputs */
+  .tco  { grid-area: tco; }
+  .rpwo { grid-area: rpwo; }
+
+  /* days */
+  .d1  { grid-area: d1; }
+  .d2  { grid-area: d2; }
+  .d3  { grid-area: d3; }
+  .d4  { grid-area: d4; }
+  .d5  { grid-area: d5; }
+  .d6  { grid-area: d6; }
+  .d7  { grid-area: d7; }
+
+  /* day outputs */
+  .d1o { grid-area: d1o; }
+  .d2o { grid-area: d2o; }
+  .d3o { grid-area: d3o; }
+  .d4o { grid-area: d4o; }
+  .d5o { grid-area: d5o; }
+  .d6o { grid-area: d6o; }
+  .d7o { grid-area: d7o; }
+ 
+
+  /* === Bottom Right === */
+
+  
+  .bottom-grid {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    padding: 5px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    ". s s ."
+    "fc fc rc rc"
+    "w w m m"
+    "c c i i";
+    color: white;
+  }
+
+  .fc { grid-area: fc; }
+  .rc { grid-area: rc; }
+  .w { grid-area: w; }
+  .m { grid-area: m; }
+  .c { grid-area: c; }
+  .i { grid-area: i; }
+  .s { grid-area: s; }
+}

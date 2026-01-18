@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WOS Calculator Skeleton</title>
+  <link rel="stylesheet" href="/CSS/main.css" /> 
+  <link rel="stylesheet" href="/CSS/tl.css">
+  <link rel="stylesheet" href="/CSS/br.css">
+  <link rel="stylesheet" href="/CSS/bottom.css">
+  <link rel="stylesheet" href="/CSS/tr.css">
+
+  <link rel="stylesheet" href="/CSS/responsive.css">
+</head>
+
+<body>
+  <div class="main-app">
+    <div class="layout">
+
+      <!-- TL -->
+      <div class="box tl">
+        <div class="tl-grid">
+
+          <!-- Global (Tower) cell -->
+          <div class="tl-left gt">
+            <div class="tl-cell-header cell-attributes">Tower</div>
+            <div class="tl-cell-img cell-attributes">
+
+                
+
+            </div>
+
+            <div class="tl-cell-body">
+
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="global-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="global-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="totalFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="totalRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Furnace -->
+          <div class="tl-cell f">
+            <div class="tl-cell-header cell-attributes">Furnace</div>
+            <div class="tl-cell-img cell-attributes">
+
+                <img src="/IMAGES/Furnace.PNG" alt="">
+
+            </div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="furnace-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="furnace-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="furnaceFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="furnaceRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- Command Center -->
+          <div class="tl-cell cc">
+            <div class="tl-cell-header cell-attributes">Command Center</div>
+            <div class="tl-cell-img cell-attributes">
+
+                <img src="/IMAGES/Command Center.PNG" alt="">
+
+            </div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="command-center-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="command-center-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="commandCenterFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="commandCenterRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Embassy -->
+          <div class="tl-cell e">
+            <div class="tl-cell-header cell-attributes">Embassy</div>
+            <div class="tl-cell-img cell-attributes">Image</div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="embassy-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="embassy-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="embassyFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="embassyRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Infantry Camp -->
+          <div class="tl-cell ic">
+            <div class="tl-cell-header cell-attributes">Infantry Camp</div>
+            <div class="tl-cell-img cell-attributes">Image</div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="infantry-camp-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="infantry-camp-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="infantryCampFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="infantryCampRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Marksman Camp -->
+          <div class="tl-cell mc">
+            <div class="tl-cell-header cell-attributes">Marksman Camp</div>
+            <div class="tl-cell-img cell-attributes">Image</div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="marksman-camp-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="marksman-camp-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="marksmanCampFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="marksmanCampRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Lancer Camp -->
+          <div class="tl-cell lc">
+            <div class="tl-cell-header cell-attributes">Lancer Camp</div>
+            <div class="tl-cell-img cell-attributes">Image</div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="lancer-camp-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="lancer-camp-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="lancerCampFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="lancerCampRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Infirmary -->
+          <div class="tl-cell i">
+            <div class="tl-cell-header cell-attributes">Infirmary</div>
+            <div class="tl-cell-img cell-attributes">Image</div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="infirmary-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="infirmary-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="infirmaryFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="infirmaryRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- War Academy -->
+          <div class="tl-cell wa">
+            <div class="tl-cell-header cell-attributes">War Academy</div>
+            <div class="tl-cell-img cell-attributes">Image</div>
+            <div class="tl-cell-body resize">
+              <div class="input-box">
+                <div class="text">From</div>
+                <select id="war-academy-from" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <div class="text">To</div>
+                <select id="war-academy-to" class="level-select">
+                  <option value="5">FC5</option>
+                  <option value="6">FC6</option>
+                  <option value="7">FC7</option>
+                  <option value="8">FC8</option>
+                </select>
+              </div>
+
+              <div class="tl-cost-box">
+                <div class="tl-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="warAcademyFC" class="tl-fc-cost-output output-style">099</div>
+                </div>
+                <div class="tl-rc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="warAcademyRC" class="tl-fc-cost-output output-style">600</div>                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TR -->
+      <section class="box tr">
+        <div class="tr-grid">
+          <div class="tr-cell">
+            <div class="tr-cell-header cell-attributes">City/State</div>
+            <div class="tr-cell-img cell-attributes">
+              <img src="/IMAGES/WOS-vp:dt.png" alt="">
+            </div>
+
+            <div class="tr-cell-body cell-attributes city-buff">
+
+              <div class="construction-buff-box">
+                Builder Speed:
+                <input type="number" id="construction-speed-input" class="tr-input">
+              </div>
+
+              <div class="double-time-box">
+                Double Time
+                <input type="checkbox" name="" id="double-time-checkbox">
+              </div>
+
+              <div class="vice-president-box">
+                Vice President
+                <input type="checkbox" name="" id="vice-president-checkbox">
+              </div>
+        
+            </div>
+          </div>
+          <div class="tr-cell">
+            <div class="tr-cell-header cell-attributes">Hyena</div>
+            <div class="tr-cell-img cell-attributes">
+              <img src="/IMAGES/WOS-hyena.png" alt="">
+            </div>
+            <div class="tr-cell-body cell-attributes">
+              <div class="text">Builder's Aide</div>
+                <select id="hyena-level" class="level-select">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>    
+            </div>
+          </div>
+          <div class="tr-cell">
+            <div class="tr-cell-header cell-attributes">Agnes</div>
+            <div class="tr-cell-img cell-attributes">
+              <img src="/IMAGES/Agnes.PNG" alt="">
+            </div>
+            <div class="tr-cell-body cell-attributes">
+              <div class="text">Project Management</div>
+                <select id="agnes-level" class="level-select">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BR -->
+      <section class="box br">
+        <div class="br-grid">
+            <div class="br-input-box">
+              <div class="br-week-box">
+                
+                <div>Weeks Input</div>
+                <input type="number" class="weeks-input br-input numeric-input" id="week-input">
+
+              </div>
+              <div class="br-refinement-box">
+
+                <div>Refinements Input</div>
+                <input type="number" class="refinement-input br-input numeric-input" id="startingRCinput">
+
+              </div>
+            </div>
+
+            <div class="br-refinement-plan-container">
+                <div class="br-refinement-plan-box">
+
+                  <div class="refinement-attributes pw">Per Week</div>
+                  <div class="refinement-attributes d1">Day 1</div>
+                  <div class="refinement-attributes d2">Day 2</div>
+                  <div class="refinement-attributes d3">Day 3</div>
+                  <div class="refinement-attributes d4">Day 4</div>
+                  <div class="refinement-attributes d5">Day 5</div>
+                  <div class="refinement-attributes d6">Day 6</div>
+                  <div class="refinement-attributes d7">Day 7</div>
+                  <div class="refinement-attributes rpw">PER Week</div>
+                  <div class="refinement-attributes tc">Total Cost</div>
+
+                  <div class="refinement-attributes bl-curve rt">Refinements</div>
+                  <div id="day1output" class="refinement-attributes d1o"></div>
+                  <div id="day2output" class="refinement-attributes d2o"></div>
+                  <div id="day3output" class="refinement-attributes d3o"></div>
+                  <div id="day4output" class="refinement-attributes d4o"></div>
+                  <div id="day5output" class="refinement-attributes d5o"></div>
+                  <div id="day6output" class="refinement-attributes d6o"></div>
+                  <div id="day7output" class="refinement-attributes d7o"></div>
+                  <div id="refinement-per-week-output" class="refinement-attributes rpwo"></div>
+                  <div id="cost-output" class="refinement-attributes br-curve tco"></div>
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Bottom -->
+      <section class="box bottom">
+        <div class="bottom-grid">
+
+            <div class="bottom-cell fc">
+
+                <div class="bottom-fc-cost">
+                  <img src="/IMAGES/Fire Crystal.png" alt="">
+                  <div id="fc-output" class="tl-fc-cost-output output-style">27,632</div>
+                </div>           
+
+            </div>
+            <div class="bottom-cell rc">
+
+                <div class="bottom-fc-cost">
+                  <img src="/IMAGES/Refined Fire Crystal.png" alt="">
+                  <div id="rc-output" class="tl-fc-cost-output output-style">099</div>
+                </div>           
+
+            </div>
+            <div class="bottom-cell w">
+
+                <div class="bottom-fc-cost">
+                  <img src="/IMAGES/WOS-wood.png" alt="">
+                  <div id="wood-output" class="tl-fc-cost-output output-style">099</div>
+                </div>           
+
+            </div>
+
+            <div class="bottom-cell m">
+
+                <div class="bottom-fc-cost">
+                  <img src="/IMAGES/WOS-meat.png" alt="">
+                  <div id="meat-output" class="tl-fc-cost-output output-style">099</div>
+                </div>           
+
+            </div>
+            <div class="bottom-cell c">
+
+                <div class="bottom-fc-cost">
+                  <img src="/IMAGES/WOS-coal.png" alt="">
+                  <div id="coal-output" class="tl-fc-cost-output output-style">099</div>
+                </div>           
+
+            </div>
+            <div class="bottom-cell i">
+
+                <div class="bottom-fc-cost">
+                  <img src="/IMAGES/WOS-iron.png" alt="">
+                  <div id="iron-output" class="tl-fc-cost-output output-style">099</div>
+                </div>           
+
+            </div>
+            <div class="bottom-cell s">
+
+                <div class="bottom-fc-cost">
+                  <img src="/IMAGES/WOS-speedup.png" alt="">
+                  <div id="speedup-output" class="tl-fc-cost-output output-style">099</div>
+                </div>           
+
+            </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="/JS/key.js"></script> 
+  <script src="/JS/dropdown.js"></script>
+</body>
+</html>

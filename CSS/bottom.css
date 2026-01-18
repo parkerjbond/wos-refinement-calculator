@@ -1,0 +1,68 @@
+.bottom { grid-area: bottom; padding: 5px; height: 100%; min-height: 0;}
+
+.bottom-grid {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    padding: 5px;
+    gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    ". fc fc rc rc s s ."
+    "w w m m c c i i";
+    color: white;
+}
+
+.fc { grid-area: fc; }
+.rc { grid-area: rc; }
+.w { grid-area: w; }
+.m { grid-area: m; }
+.c { grid-area: c; }
+.i { grid-area: i; }
+.s { grid-area: s; }
+
+.bottom-cell {
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    
+}
+
+.bottom-fc-cost {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 6px;
+
+  /* controls total size */
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+.bottom-fc-cost img {
+  width: 100%;
+  height: 100%;
+
+  max-width: 32px;          /* 🔑 start small */
+  max-height: 32px;
+
+  min-width: 0;
+  min-height: 0;
+
+  object-fit: contain;
+  display: block;
+
+  max-width: clamp(18px, 4vw, 32px);
+  max-height: clamp(18px, 4vw, 32px);
+}
+

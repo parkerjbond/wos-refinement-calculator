@@ -1,0 +1,83 @@
+.br { grid-area: br; }
+
+.br-input-box {
+    display: flex;
+    background-color: #272841;
+    color: #FFF;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.br-week-box,
+.br-refinement-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.br-refinment-plan-container {
+    width: 100%;
+    height: 100%;
+}
+
+.br-refinement-plan-box {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 1px;
+    background-color: white;
+    padding: 1px 0px 0px 0px;
+    min-width: none;
+    min-height: none;
+}
+
+.refinement-attributes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #212038;
+    color: white;
+    font-size: 10px;
+    
+}
+
+.br-grid {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.bl-curve {
+    border-radius: 0px 0px 0px 5px;
+}
+
+.br-curve {
+    border-radius: 0px 0px 5px 0px;
+}
+
+.br-input {
+  width: 40%;
+  height: 36px;
+
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background-color: #212038;
+  color: #fff;
+
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
