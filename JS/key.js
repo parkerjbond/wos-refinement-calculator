@@ -74,51 +74,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const UpgradeRequirement = {
     // Furnace
     Furnace5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    Furnace6: { FC: 900, RC: 60, Meat: 480000000, Wood: 480000000, Coal: 95000000, Iron: 24000000, Time: 5184000 },
-    Furnace7: { FC: 1080, RC: 90, Meat: 500000000, Wood: 500000000, Coal: 105000000, Iron: 27000000, Time: 6220800 },
-    Furnace8: { FC: 1080, RC: 120, Meat: 650000000, Wood: 650000000, Coal: 130000000, Iron: 33000000, Time: 6912000 },
+    Furnace6: { FC: 900, RC: 60, Meat: 480000000, Wood: 480000000, Coal: 95000000, Iron: 24000000, Time: 6480000 },
+    Furnace7: { FC: 1080, RC: 90, Meat: 500000000, Wood: 500000000, Coal: 105000000, Iron: 27000000, Time: 7776000 },
+    Furnace8: { FC: 1080, RC: 120, Meat: 650000000, Wood: 650000000, Coal: 130000000, Iron: 33000000, Time: 8640000 },
 
     // Embassy
     Embassy5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    Embassy6: { FC: 225, RC: 13, Meat: 95000000, Wood: 95000000, Coal: 19000000, Iron: 4800000, Time: 3386880 },
-    Embassy7: { FC: 270, RC: 19, Meat: 105000000, Wood: 105000000, Coal: 21500000, Iron: 5000000, Time: 4104000 },
-    Embassy8: { FC: 270, RC: 30, Meat: 130000000, Wood: 130000000, Coal: 26500000, Iron: 6500000, Time: 4561200 },
+    Embassy6: { FC: 225, RC: 13, Meat: 95000000, Wood: 95000000, Coal: 19000000, Iron: 4800000, Time: 4276800 },
+    Embassy7: { FC: 270, RC: 19, Meat: 105000000, Wood: 105000000, Coal: 21500000, Iron: 5000000, Time: 5132100 },
+    Embassy8: { FC: 270, RC: 30, Meat: 130000000, Wood: 130000000, Coal: 26500000, Iron: 6500000, Time: 5702400 },
 
     // Infantry Camp
     InfantryCamp5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    InfantryCamp6: { FC: 405, RC: 25, Meat: 165000000, Wood: 165000000, Coal: 33500000, Iron: 8000000, Time: 777600 },
-    InfantryCamp7: { FC: 486, RC: 37, Meat: 190000000, Wood: 190000000, Coal: 38000000, Iron: 9500000, Time: 933120 },
-    InfantryCamp8: { FC: 486, RC: 54, Meat: 230000000, Wood: 230000000, Coal: 46500000, Iron: 11500000, Time: 1036800 },
+    InfantryCamp6: { FC: 405, RC: 25, Meat: 165000000, Wood: 165000000, Coal: 33500000, Iron: 8000000, Time: 972000 },
+    InfantryCamp7: { FC: 486, RC: 37, Meat: 190000000, Wood: 190000000, Coal: 38000000, Iron: 9500000, Time: 1180800 },
+    InfantryCamp8: { FC: 486, RC: 54, Meat: 230000000, Wood: 230000000, Coal: 46500000, Iron: 11500000, Time: 1296000 },
 
     // Marksman Camp
     MarksmanCamp5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    MarksmanCamp6: { FC: 405, RC: 25, Meat: 165000000, Wood: 165000000, Coal: 33500000, Iron: 8000000, Time: 777600 },
-    MarksmanCamp7: { FC: 486, RC: 37, Meat: 190000000, Wood: 190000000, Coal: 38000000, Iron: 9500000, Time: 933120 },
-    MarksmanCamp8: { FC: 486, RC: 54, Meat: 230000000, Wood: 230000000, Coal: 46500000, Iron: 11500000, Time: 1036800 },
+    MarksmanCamp6: { FC: 405, RC: 25, Meat: 165000000, Wood: 165000000, Coal: 33500000, Iron: 8000000, Time: 972000 },
+    MarksmanCamp7: { FC: 486, RC: 37, Meat: 190000000, Wood: 190000000, Coal: 38000000, Iron: 9500000, Time: 1180800 },
+    MarksmanCamp8: { FC: 486, RC: 54, Meat: 230000000, Wood: 230000000, Coal: 46500000, Iron: 11500000, Time: 1296000 },
 
     // Lancer Camp
     LancerCamp5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    LancerCamp6: { FC: 405, RC: 25, Meat: 165000000, Wood: 165000000, Coal: 33500000, Iron: 8000000, Time: 777600 },
-    LancerCamp7: { FC: 486, RC: 37, Meat: 190000000, Wood: 190000000, Coal: 38000000, Iron: 9500000, Time: 933120 },
-    LancerCamp8: { FC: 486, RC: 54, Meat: 230000000, Wood: 230000000, Coal: 46500000, Iron: 11500000, Time: 1036800 },
+    LancerCamp6: { FC: 405, RC: 25, Meat: 165000000, Wood: 165000000, Coal: 33500000, Iron: 8000000, Time: 972000 },
+    LancerCamp7: { FC: 486, RC: 37, Meat: 190000000, Wood: 190000000, Coal: 38000000, Iron: 9500000, Time: 1180800 },
+    LancerCamp8: { FC: 486, RC: 54, Meat: 230000000, Wood: 230000000, Coal: 46500000, Iron: 11500000, Time: 1296000 },
 
     // Command Center
     CommandCenter5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    CommandCenter6: { FC: 180, RC: 13, Meat: 145000000, Wood: 145000000, Coal: 29000000, Iron: 7000000, Time: 622080 },
-    CommandCenter7: { FC: 216, RC: 19, Meat: 160000000, Wood: 160000000, Coal: 32500000, Iron: 7500000, Time: 669600 },
-    CommandCenter8: { FC: 216, RC: 24, Meat: 195000000, Wood: 195000000, Coal: 39500000, Iron: 9500000, Time: 827280 },
+    CommandCenter6: { FC: 180, RC: 13, Meat: 145000000, Wood: 145000000, Coal: 29000000, Iron: 7000000, Time: 777600 },
+    CommandCenter7: { FC: 216, RC: 19, Meat: 160000000, Wood: 160000000, Coal: 32500000, Iron: 7500000, Time: 891000 },
+    CommandCenter8: { FC: 216, RC: 24, Meat: 195000000, Wood: 195000000, Coal: 39500000, Iron: 9500000, Time: 1047600 },
 
     // Infirmary
     Infirmary5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    Infirmary6: { FC: 180, RC: 13, Meat: 120000000, Wood: 120000000, Coal: 24000000, Iron: 6000000, Time: 725760 },
-    Infirmary7: { FC: 216, RC: 19, Meat: 135000000, Wood: 135000000, Coal: 27000000, Iron: 6500000, Time: 871920 },
-    Infirmary8: { FC: 216, RC: 24, Meat: 165000000, Wood: 165000000, Coal: 33000000, Iron: 8000000, Time: 878400 },
+    Infirmary6: { FC: 180, RC: 13, Meat: 120000000, Wood: 120000000, Coal: 24000000, Iron: 6000000, Time: 907200 },
+    Infirmary7: { FC: 216, RC: 19, Meat: 135000000, Wood: 135000000, Coal: 27000000, Iron: 6500000, Time: 1096400 },
+    Infirmary8: { FC: 216, RC: 24, Meat: 165000000, Wood: 165000000, Coal: 33000000, Iron: 8000000, Time: 1209600 },
 
     // War Academy
     WarAcademy5: { FC: 0, RC: 0, Meat: 0, Wood: 0, Coal: 0, Iron: 0, Time: 0 },
-    WarAcademy6: { FC: 405, RC: 25, Meat: 240000000, Wood: 240000000, Coal: 48000000, Iron: 12000000, Time: 1044000 },
-    WarAcademy7: { FC: 486, RC: 37, Meat: 270000000, Wood: 270000000, Coal: 50000000, Iron: 13500000, Time: 1244160 },
-    WarAcademy8: { FC: 486, RC: 54, Meat: 330000000, Wood: 330000000, Coal: 65000000, Iron: 16500000, Time: 1296000 },
+    WarAcademy6: { FC: 405, RC: 25, Meat: 240000000, Wood: 240000000, Coal: 48000000, Iron: 12000000, Time: 1296000 },
+    WarAcademy7: { FC: 486, RC: 37, Meat: 270000000, Wood: 270000000, Coal: 50000000, Iron: 13500000, Time: 1555200 },
+    WarAcademy8: { FC: 486, RC: 54, Meat: 330000000, Wood: 330000000, Coal: 65000000, Iron: 16500000, Time: 1728000 },
   };
 
   // ===== Dropdowns =====
