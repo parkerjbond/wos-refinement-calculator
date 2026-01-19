@@ -17,7 +17,7 @@
   }
 
   /* give the right side a consistent padding like tl has */
-  .tr, .br, .bottom { padding: 12px; }
+  .tr, .br, .bottom { padding: 16px; }
 
   /* allow scrolling instead of squeezing */
   .layout { height: auto; }
