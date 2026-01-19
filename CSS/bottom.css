@@ -10,11 +10,12 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas: 
-    ". fc fc rc rc s s ."
+    "t t fc fc rc rc s s"
     "w w m m c c i i";
     color: white;
 }
 
+.t {grid-area: t;}
 .fc { grid-area: fc; }
 .rc { grid-area: rc; }
 .w { grid-area: w; }
